@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM for Password Check</h1>
+	<label for="name">Name</label>
+	<input type="text" id="name" placeholder="Name" name="name"><br><br>
+	<label for="password">Password</label>
+	<input type="password" for="password" id="password" placeholder="Password" name="password" ><br><br>
+	<label for="con_password">Confirm Password</label>
+	<input type="password" for="con_password" id="con_password" placeholder="Confirm Passsword" name="con_password" oninput="pass()">
+    <!-- oninput is used to check the password while entering it check it on the spot  -->
+    <span id="pas"></span>
+    <!-- span is used to check the password is right or wrong .it get called in javascript -->
+    <script src="script.js"></script>    
+</body>
+</html>
