@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CONCEPTS</title>
+</head>
+<body>
+    <h1>Documents (Objects Property)</h1>
+    <h4>A Document object represents the HTML document that is displayed in that window.
+To add or Edit the content in html file by using javascript is only done with the help of document object.
+    </h4>
+    <section>
+        <button onclick="changes()">Click Here</button>
+		<h1 id="doc">Get Element By Id</h1>
+    </section>
+	<h1>DOM for Password Check</h1>
+	<label for="name">Name</label>
+	<input type="text" id="name" placeholder="Name" name="name"><br><br>
+	<label for="password">Password</label>
+	<input type="password" for="password" id="password" placeholder="Password" name="password" ><br><br>
+	<label for="con_password">Confirm Password</label>
+	<input type="password" for="con_password" id="con_password" placeholder="Confirm Passsword" name="con_password" oninput="pass()">
+    <!-- oninput is used to check the password while entering it check it on the spot  -->
+    <span id="pas"></span>
+    <!-- span is used to check the password is right or wrong .it get called in javascript -->
+    <br>
+    <br>
+
+    <!-- RADIO BUTTON -->
+    <fieldset>
+        <legend>Radio Buttons</legend>
+    
+    <label for="Language">Language</label><br><br>
+    <input type="radio" id="english" value="English" name="language">
+    <label for="english">English</label><br><b></b>
+    <input type="radio" id="tamil" value="Tamil" name="language">
+    <label for="tamil">Tamil</label><br>
+    <input type="radio" id="malayalam" value="Malayalam" name="language">
+    <label for="malayalam">Malayalam</label><br><br>
+    <button onclick="rad()">Check</button>
+</fieldset>
+
+<!-- OPTION LIST -UNFINISHED-->
+<label for="Hobbies">Hobbies</label>
+<select name="hobbies" id="hobbies">
+<option value="Reading_books">Reading Books</option>
+<option value="travelling">Travelling</option>
+<option value="music">Listening Music</option>
+<option value="watching movies">Watching Movies</option>
+<button id="hob-but">Check</button>
+</select>
+<br>
+<br>
+
+<!-- SHOPPING -->
+<table border="2">
+<tr>
+    <th>Product</th>
+    <th>Unit Price</th>
+    <th>Quantity</th>
+    <th>Action</th>
+    <th>Price</th>
+</tr>
+<tr>
+    <td>Books</td>
+    <td id="singleprice">800</td>
+    <td><input type="text" id="quan" value=""></td>
+    <td><button id="trigger">Total</button></td>
+    <td id="amount"></td>
+</tr>
+</table>
+<br>
+<br>
+<table border="2">
+    <tr>
+        <th>Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Action</th>
+        <th>Price</th>
+    </tr>
+<tr>
+    <td>Fantasy Bags</td>
+    <td class="pro_price">1200</td>
+    <td><input type="text" class="give"></td>
+    <td><button class="trigger">Total</button></td>
+    <td class="amount"></td>
+</tr>
+<tr>
+    <td>Watch</td>
+    <td class="pro_price">2400</td>
+    <td><input type="text" class="give"></td>
+    <td><button class="trigger">Total</button></td>
+    <td class="amount"></td>
+</tr>
+<tr>
+    <td>Headset</td>
+    <td class="pro_price">1500</td>
+    <td><input type="text" class="give"></td>
+    <td><button class="trigger">Total</button></td>
+    <td class="amount"></td>
+</tr>
+<tr>
+    <td>Charger</td>
+    <td class="pro_price">1800</td>
+    <td><input type="text" class="give"></td>
+    <td><button class="trigger">Total</button></td>
+    <td class="amount"></td>
+</tr>
+</table>
+
+
+<!--QueryselectorAll()  -->
+<!-- It used to select all the elements that matches a CSS Selectors -->
+
+<h1 class="abcd">Hi Good Morng</h1>
+<p class="abcd">How r u?</p>
+<p class="abcd">I'm Fine</p>
+
+<!-- AGE CALENDAR -->
+<section class="container">
+    <input type="datetime-local" id="dob">
+    <button id="trigger">Calculate Age</button>
+    <div class="data">
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="week"></p>
+    <p id="days"></p>
+    <p id="hour"></p>
+    <p id="min"></p>
+    <p id="sec"></p>
+</div>
+</section>
+	<script src="script.js"></script>
+</body>
+</html>
