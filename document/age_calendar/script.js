@@ -5,7 +5,7 @@ document.getElementById("trigger").addEventListener('click', cal)
                 day = new Date(dob),
                 time = day.getTime(),
                 today = new Date(),
-                timenow = today.getTime(),
+                timenow = today.getTime(), 
                 value = timenow - time,
                 sec = Math.floor(value / 1000),
                 min = Math.floor(value / (1000 * 60)),
